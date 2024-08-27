@@ -1,0 +1,115 @@
+﻿@model Do_An.Models.KhachHang
+@using Do_An.Models
+@{
+    ViewBag.Title = "Index";
+}
+
+<!--bradcam_area_start-->
+<div class="collection_text">Check Out</div>
+<!---->
+<!--==============================================-->
+<section class=" blog_area setion_padding">
+        <div class="container">
+            <div class="shopIF">
+                @using (Html.BeginForm("Index", "CheckOut", FormMethod.Post))
+                {
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="shopperIF">
+                                <p class="IF">Customer Information</p>
+
+                                <div class="form-group">
+                                    <label class="hoten">Name</label>
+                                    @Html.TextBoxFor(m => m.HoTen, new { @class = "form-control", @placeholder = "Display Name" })
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="date">Date</label>
+                                    @Html.TextBoxFor(m => m.NgaySinh, new { @type = "date", @class = "form-control" })
+                                </div>
+
+                                <div class="form-group">
+                                    
+                                    <div class="form-group">
+                                        <button type="submit" class="btn btn-success btnsc">Pay</button>
+                                    </div>
+                                    <a href="@Url.Action("Index","Top")" class=" btn btn-default btndf"> &lt;&lt;Back</a>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="shopperIF">
+                                <p class="IF">Communications</p>
+                                <div class="form-one">
+
+                                    <div class="form-group">
+                                        <label for="email">Email</label>
+                                        @Html.TextBoxFor(m => m.Email, new { @class = "form-control", @placeholder = "Email" })
+                                    </div>
+
+                                    <div class="form-group">
+                                         <label for="acc">Email</label>
+                                         @Html.TextBoxFor(m => m.TaiKhoan, new { @class = "form-control", @placeholder = "Account" })
+                                     </div>
+
+                                    <div class="form-group">
+                                        <label for="addr">Address</label>
+                                        @Html.TextBoxFor(m => m.DiachiKH, new { @class = "form-control", @placeholder = "ADDR" })
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="shopperIF">
+                                <p class="IF">Other Information</p>
+
+                                <div class="form-group">
+                                    <label for="ghichu">Information Notes</label>
+                                    <textarea id="ghichu" name="mess" class="form-control" placeholder=" thông tin ghi chú" row="8" style="padding-bottom9px;">
+                                    </textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    @Html.HiddenFor(x => x.MaKH)
+                }
+            </div>
+
+            <div class="review">
+                <div class="row gach">
+                    <div class="heading-prif">
+                        <h3 class="heading-prif">Product Iformation</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="table_reponsive card_info">
+                        <table class=" table table-condersed">
+                            <thead>
+                                <tr class="card_menu">
+                                    <td class="image">Item</td>
+                                    <td class="price">Price</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="card_product">
+                                        <a><img /></a>
+                                    </td>
+                                    <td>
+                                       
+                                    </td>
+                                    <td>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+</section>
+

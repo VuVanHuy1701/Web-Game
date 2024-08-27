@@ -1,0 +1,30 @@
+﻿
+@model Do_An.Models.Game
+@{
+    ViewBag.Title = "Details";
+}
+<p></p>
+
+<div class="container" style="width:75%">
+    <div class="row">
+        <div class="col-sm-4 anhbia">
+            <img src="~/images/@Model.AnhBia" class="img-thumbnail" style="width:100%" alt="Image" />
+        </div>
+        <div class="col-sm-8">
+            <p class="best_text">
+                <h4 class="text-uppercase textdetails">@Model.TenGame</h4>
+            </p>
+            <div class="bd">
+                <p class="description ">@Model.MoTa</p>
+                <p>Publication Date: @string.Format("{0: dd MMM yyyy}", @Model.NgayCapNhat)</p>
+            </div>
+
+            <h3><a class="theloai" href='@Url.Action("Index",new { Id = @Model.MaCate })'><strong>Category: @Model.Category.TenHangMuc</strong></a></h3>
+
+            <button class="buy_bt mua ">$@Model.GiaBan @Html.ActionLink("Buy Now", "Index", "CheckOut")</button>
+
+            <p class="back">@Html.ActionLink("Back to Product", "Index", "Top")</p>
+        </div>
+    </div>
+</div>
+<p></p> 

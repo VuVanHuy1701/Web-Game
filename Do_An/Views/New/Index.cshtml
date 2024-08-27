@@ -1,0 +1,30 @@
+﻿@model IEnumerable<Do_An.Models.NewsPost>
+
+@{
+    ViewBag.Title = "News";
+}
+
+<!-- new collection section start -->
+<div class="content">
+    <div class="collection_text">News</div>
+    <div class="post-group">
+        @foreach (var item in Model)
+        {
+            <ul >
+                <li>
+                    <div class="col-sm-6">
+                        <div class="col-md-10">
+                            <div class="post-image">
+                                <a href="@Url.Action("DetailsPostList", new {id = item.PostID})">
+                                    <h3 class="title-post">@item.PostName</h3>
+                                    <img src="~/images/@item.PostImg" class="img-post" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        }
+    </div>
+</div>
+<!-- new collection section end -->

@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DoAn_WebModelStoreContainer" CdmEntityContainer="DoAn_WebEntities">
+    <EntitySetMapping Name="Admins">
+      <EntityTypeMapping TypeName="DoAn_WebModel.Admin">
+        <MappingFragment StoreEntitySet="Admin">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="UserAdmin" ColumnName="UserAdmin" />
+          <ScalarProperty Name="PassAdmin" ColumnName="PassAdmin" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Categories">
+      <EntityTypeMapping TypeName="DoAn_WebModel.Category">
+        <MappingFragment StoreEntitySet="Category">
+          <ScalarProperty Name="ghichu" ColumnName="ghichu" />
+          <ScalarProperty Name="MaCategory" ColumnName="MaCategory" />
+          <ScalarProperty Name="TenHangMuc" ColumnName="TenHangMuc" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ChiTietDatHangs">
+      <EntityTypeMapping TypeName="DoAn_WebModel.ChiTietDatHang">
+        <MappingFragment StoreEntitySet="ChiTietDatHang">
+          <ScalarProperty Name="SoDH" ColumnName="SoDH" />
+          <ScalarProperty Name="MaGame" ColumnName="MaGame" />
+          <ScalarProperty Name="DonGia" ColumnName="DonGia" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DonDatHangs">
+      <EntityTypeMapping TypeName="DoAn_WebModel.DonDatHang">
+        <MappingFragment StoreEntitySet="DonDatHang">
+          <ScalarProperty Name="SoDH" ColumnName="SoDH" />
+          <ScalarProperty Name="MaKH" ColumnName="MaKH" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Games">
+      <EntityTypeMapping TypeName="DoAn_WebModel.Game">
+        <MappingFragment StoreEntitySet="Game">
+          <ScalarProperty Name="MaGame" ColumnName="MaGame" />
+          <ScalarProperty Name="TenGame" ColumnName="TenGame" />
+          <ScalarProperty Name="AnhBia" ColumnName="AnhBia" />
+          <ScalarProperty Name="GiaBan" ColumnName="GiaBan" />
+          <ScalarProperty Name="MoTa" ColumnName="MoTa" />
+          <ScalarProperty Name="NgayCapNhat" ColumnName="NgayCapNhat" />
+          <ScalarProperty Name="SoLuongTon" ColumnName="SoLuongTon" />
+          <ScalarProperty Name="MaCate" ColumnName="MaCate" />
+          <ScalarProperty Name="MaStu" ColumnName="MaStu" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="KhachHangs">
+      <EntityTypeMapping TypeName="DoAn_WebModel.KhachHang">
+        <MappingFragment StoreEntitySet="KhachHang">
+          <ScalarProperty Name="MaKH" ColumnName="MaKH" />
+          <ScalarProperty Name="HoTen" ColumnName="HoTen" />
+          <ScalarProperty Name="TaiKhoan" ColumnName="TaiKhoan" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="DiachiKH" ColumnName="DiachiKH" />
+          <ScalarProperty Name="NgaySinh" ColumnName="NgaySinh" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StudioGames">
+      <EntityTypeMapping TypeName="DoAn_WebModel.StudioGame">
+        <MappingFragment StoreEntitySet="StudioGame">
+          <ScalarProperty Name="MaStudio" ColumnName="MaStudio" />
+          <ScalarProperty Name="TenStudio" ColumnName="TenStudio" />
+          <ScalarProperty Name="DiaChi" ColumnName="DiaChi" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Game_Category">
+      <EntityTypeMapping TypeName="DoAn_WebModel.Game_Category">
+        <MappingFragment StoreEntitySet="Game_Category">
+          <ScalarProperty Name="TenHangMuc" ColumnName="TenHangMuc" />
+          <ScalarProperty Name="GiaBan" ColumnName="GiaBan" />
+          <ScalarProperty Name="AnhBia" ColumnName="AnhBia" />
+          <ScalarProperty Name="TenGame" ColumnName="TenGame" />
+          <ScalarProperty Name="MaGame" ColumnName="MaGame" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Gametops">
+      <EntityTypeMapping TypeName="DoAn_WebModel.Gametop">
+        <MappingFragment StoreEntitySet="Gametop">
+          <ScalarProperty Name="mieuta" ColumnName="mieuta" />
+          <ScalarProperty Name="anh" ColumnName="anh" />
+          <ScalarProperty Name="ten" ColumnName="ten" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NewsPosts">
+      <EntityTypeMapping TypeName="DoAn_WebModel.NewsPost">
+        <MappingFragment StoreEntitySet="NewsPost">
+          <ScalarProperty Name="PostNameFull" ColumnName="PostNameFull" />
+          <ScalarProperty Name="dayUpdated" ColumnName="dayUpdated" />
+          <ScalarProperty Name="PostDesc" ColumnName="PostDesc" />
+          <ScalarProperty Name="PostImg" ColumnName="PostImg" />
+          <ScalarProperty Name="PostName" ColumnName="PostName" />
+          <ScalarProperty Name="PostID" ColumnName="PostID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

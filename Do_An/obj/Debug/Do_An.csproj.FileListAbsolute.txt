@@ -1,0 +1,249 @@
+E:\NAM 2\laptrinhweb\project\Do_An\bin\Do_An.dll.config
+E:\NAM 2\laptrinhweb\project\Do_An\bin\Do_An.dll
+E:\NAM 2\laptrinhweb\project\Do_An\bin\Do_An.pdb
+E:\NAM 2\laptrinhweb\project\Do_An\bin\roslyn\csc.exe
+E:\NAM 2\laptrinhweb\project\Do_An\bin\roslyn\csc.exe.config
+E:\NAM 2\laptrinhweb\project\Do_An\bin\roslyn\csc.rsp
+E:\NAM 2\laptrinhweb\project\Do_An\bin\roslyn\csi.exe
+E:\NAM 2\laptrinhweb\project\Do_An\bin\roslyn\csi.exe.config
+E:\NAM 2\laptrinhweb\project\Do_An\bin\roslyn\csi.rsp
+E:\NAM 2\laptrinhweb\project\Do_An\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\NAM 2\laptrinhweb\project\Do_An\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\NAM 2\laptrinhweb\project\Do_An\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\NAM 2\laptrinhweb\project\Do_An\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\NAM 2\laptrinhweb\project\Do_An\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\NAM 2\laptrinhweb\project\Do_An\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\NAM 2\laptrinhweb\project\Do_An\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\NAM 2\laptrinhweb\project\Do_An\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\NAM 2\laptrinhweb\project\Do_An\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\NAM 2\laptrinhweb\project\Do_An\bin\roslyn\Microsoft.Managed.Core.targets
+E:\NAM 2\laptrinhweb\project\Do_An\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\NAM 2\laptrinhweb\project\Do_An\bin\roslyn\Microsoft.Win32.Primitives.dll
+E:\NAM 2\laptrinhweb\project\Do_An\bin\roslyn\System.AppContext.dll
+E:\NAM 2\laptrinhweb\project\Do_An\bin\roslyn\System.Collections.Immutable.dll
+E:\NAM 2\laptrinhweb\project\Do_An\bin\roslyn\System.Console.dll
+E:\NAM 2\laptrinhweb\project\Do_An\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+E:\NAM 2\laptrinhweb\project\Do_An\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\NAM 2\laptrinhweb\project\Do_An\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\NAM 2\laptrinhweb\project\Do_An\bin\roslyn\System.Globalization.Calendars.dll
+E:\NAM 2\laptrinhweb\project\Do_An\bin\roslyn\System.IO.Compression.dll
+E:\NAM 2\laptrinhweb\project\Do_An\bin\roslyn\System.IO.Compression.ZipFile.dll
+E:\NAM 2\laptrinhweb\project\Do_An\bin\roslyn\System.IO.FileSystem.dll
+E:\NAM 2\laptrinhweb\project\Do_An\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\NAM 2\laptrinhweb\project\Do_An\bin\roslyn\System.Net.Http.dll
+E:\NAM 2\laptrinhweb\project\Do_An\bin\roslyn\System.Net.Sockets.dll
+E:\NAM 2\laptrinhweb\project\Do_An\bin\roslyn\System.Reflection.Metadata.dll
+E:\NAM 2\laptrinhweb\project\Do_An\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+E:\NAM 2\laptrinhweb\project\Do_An\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\NAM 2\laptrinhweb\project\Do_An\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\NAM 2\laptrinhweb\project\Do_An\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\NAM 2\laptrinhweb\project\Do_An\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\NAM 2\laptrinhweb\project\Do_An\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\NAM 2\laptrinhweb\project\Do_An\bin\roslyn\System.Threading.Tasks.Extensions.dll
+E:\NAM 2\laptrinhweb\project\Do_An\bin\roslyn\System.ValueTuple.dll
+E:\NAM 2\laptrinhweb\project\Do_An\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\NAM 2\laptrinhweb\project\Do_An\bin\roslyn\System.Xml.XmlDocument.dll
+E:\NAM 2\laptrinhweb\project\Do_An\bin\roslyn\System.Xml.XPath.dll
+E:\NAM 2\laptrinhweb\project\Do_An\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\NAM 2\laptrinhweb\project\Do_An\bin\roslyn\vbc.exe
+E:\NAM 2\laptrinhweb\project\Do_An\bin\roslyn\vbc.exe.config
+E:\NAM 2\laptrinhweb\project\Do_An\bin\roslyn\vbc.rsp
+E:\NAM 2\laptrinhweb\project\Do_An\bin\roslyn\VBCSCompiler.exe
+E:\NAM 2\laptrinhweb\project\Do_An\bin\roslyn\VBCSCompiler.exe.config
+E:\NAM 2\laptrinhweb\project\Do_An\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\NAM 2\laptrinhweb\project\Do_An\bin\Microsoft.Web.Infrastructure.dll
+E:\NAM 2\laptrinhweb\project\Do_An\bin\System.Web.Helpers.dll
+E:\NAM 2\laptrinhweb\project\Do_An\bin\System.Web.Mvc.dll
+E:\NAM 2\laptrinhweb\project\Do_An\bin\System.Web.Razor.dll
+E:\NAM 2\laptrinhweb\project\Do_An\bin\System.Web.Webpages.Deployment.dll
+E:\NAM 2\laptrinhweb\project\Do_An\bin\System.Web.Webpages.dll
+E:\NAM 2\laptrinhweb\project\Do_An\bin\System.Web.Webpages.Razor.dll
+E:\NAM 2\laptrinhweb\project\Do_An\bin\System.Web.Razor.xml
+E:\NAM 2\laptrinhweb\project\Do_An\bin\System.Web.Webpages.xml
+E:\NAM 2\laptrinhweb\project\Do_An\bin\System.Web.Webpages.Deployment.xml
+E:\NAM 2\laptrinhweb\project\Do_An\bin\System.Web.Webpages.Razor.xml
+E:\NAM 2\laptrinhweb\project\Do_An\bin\System.Web.Helpers.xml
+E:\NAM 2\laptrinhweb\project\Do_An\bin\System.Web.Mvc.xml
+E:\NAM 2\laptrinhweb\project\Do_An\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\NAM 2\laptrinhweb\project\Do_An\obj\Debug\Do_An.csproj.AssemblyReference.cache
+E:\NAM 2\laptrinhweb\project\Do_An\obj\Debug\Do_An.csproj.CoreCompileInputs.cache
+E:\NAM 2\laptrinhweb\project\Do_An\obj\Debug\Do_An.csproj.CopyComplete
+E:\NAM 2\laptrinhweb\project\Do_An\obj\Debug\Do_An.dll
+E:\NAM 2\laptrinhweb\project\Do_An\obj\Debug\Do_An.pdb
+E:\NAM 2\laptrinhweb\project\Do_An\bin\Antlr3.Runtime.dll
+E:\NAM 2\laptrinhweb\project\Do_An\bin\Newtonsoft.Json.dll
+E:\NAM 2\laptrinhweb\project\Do_An\bin\System.Web.Optimization.dll
+E:\NAM 2\laptrinhweb\project\Do_An\bin\WebGrease.dll
+E:\NAM 2\laptrinhweb\project\Do_An\bin\Antlr3.Runtime.pdb
+E:\NAM 2\laptrinhweb\project\Do_An\bin\Newtonsoft.Json.xml
+E:\NAM 2\laptrinhweb\project\Do_An\bin\System.Web.Optimization.xml
+E:\NAM 2\laptrinhweb\project\Do_An\bin\EntityFramework.dll
+E:\NAM 2\laptrinhweb\project\Do_An\bin\EntityFramework.SqlServer.dll
+E:\NAM 2\laptrinhweb\project\Do_An\bin\EntityFramework.xml
+E:\NAM 2\laptrinhweb\project\Do_An\bin\EntityFramework.SqlServer.xml
+E:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\bin\Do_An.dll.config
+E:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\bin\Do_An.dll
+E:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\bin\Do_An.pdb
+E:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\bin\roslyn\csc.exe
+E:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\bin\roslyn\csc.exe.config
+E:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\bin\roslyn\csc.rsp
+E:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\bin\roslyn\csi.exe
+E:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\bin\roslyn\csi.exe.config
+E:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\bin\roslyn\csi.rsp
+E:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\bin\roslyn\Microsoft.Managed.Core.targets
+E:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\bin\roslyn\Microsoft.Win32.Primitives.dll
+E:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\bin\roslyn\System.AppContext.dll
+E:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\bin\roslyn\System.Collections.Immutable.dll
+E:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\bin\roslyn\System.Console.dll
+E:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+E:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\bin\roslyn\System.Globalization.Calendars.dll
+E:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\bin\roslyn\System.IO.Compression.dll
+E:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\bin\roslyn\System.IO.Compression.ZipFile.dll
+E:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\bin\roslyn\System.IO.FileSystem.dll
+E:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\bin\roslyn\System.Net.Http.dll
+E:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\bin\roslyn\System.Net.Sockets.dll
+E:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\bin\roslyn\System.Reflection.Metadata.dll
+E:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+E:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\bin\roslyn\System.Threading.Tasks.Extensions.dll
+E:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\bin\roslyn\System.ValueTuple.dll
+E:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\bin\roslyn\System.Xml.XmlDocument.dll
+E:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\bin\roslyn\System.Xml.XPath.dll
+E:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\bin\roslyn\vbc.exe
+E:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\bin\roslyn\vbc.exe.config
+E:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\bin\roslyn\vbc.rsp
+E:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\bin\roslyn\VBCSCompiler.exe
+E:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\bin\roslyn\VBCSCompiler.exe.config
+E:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\bin\Antlr3.Runtime.dll
+E:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\bin\EntityFramework.dll
+E:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\bin\EntityFramework.SqlServer.dll
+E:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\bin\Microsoft.Web.Infrastructure.dll
+E:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\bin\Newtonsoft.Json.dll
+E:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\bin\System.Web.Helpers.dll
+E:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\bin\System.Web.Mvc.dll
+E:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\bin\System.Web.Optimization.dll
+E:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\bin\System.Web.Razor.dll
+E:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\bin\System.Web.Webpages.Deployment.dll
+E:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\bin\System.Web.Webpages.dll
+E:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\bin\System.Web.Webpages.Razor.dll
+E:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\bin\WebGrease.dll
+E:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\bin\Antlr3.Runtime.pdb
+E:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\bin\EntityFramework.xml
+E:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\bin\EntityFramework.SqlServer.xml
+E:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\bin\Newtonsoft.Json.xml
+E:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\bin\System.Web.Optimization.xml
+E:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\bin\System.Web.Razor.xml
+E:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\bin\System.Web.Webpages.xml
+E:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\bin\System.Web.Webpages.Deployment.xml
+E:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\bin\System.Web.Webpages.Razor.xml
+E:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\bin\System.Web.Helpers.xml
+E:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\bin\System.Web.Mvc.xml
+E:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\obj\Debug\Do_An.csproj.AssemblyReference.cache
+E:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\obj\Debug\Do_An.csproj.CoreCompileInputs.cache
+E:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\obj\Debug\Do_An.csproj.CopyComplete
+E:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\obj\Debug\Do_An.dll
+E:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\obj\Debug\Do_An.pdb
+F:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\bin\Do_An.dll.config
+F:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\bin\Do_An.dll
+F:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\bin\Do_An.pdb
+F:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\bin\roslyn\csc.exe
+F:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\bin\roslyn\csc.exe.config
+F:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\bin\roslyn\csc.rsp
+F:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\bin\roslyn\csi.exe
+F:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\bin\roslyn\csi.exe.config
+F:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\bin\roslyn\csi.rsp
+F:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+F:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+F:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+F:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\bin\roslyn\Microsoft.CodeAnalysis.dll
+F:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+F:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+F:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\bin\roslyn\Microsoft.CSharp.Core.targets
+F:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+F:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+F:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\bin\roslyn\Microsoft.Managed.Core.targets
+F:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\bin\roslyn\Microsoft.VisualBasic.Core.targets
+F:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\bin\roslyn\Microsoft.Win32.Primitives.dll
+F:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\bin\roslyn\System.AppContext.dll
+F:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\bin\roslyn\System.Collections.Immutable.dll
+F:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\bin\roslyn\System.Console.dll
+F:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+F:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+F:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\bin\roslyn\System.Diagnostics.StackTrace.dll
+F:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\bin\roslyn\System.Globalization.Calendars.dll
+F:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\bin\roslyn\System.IO.Compression.dll
+F:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\bin\roslyn\System.IO.Compression.ZipFile.dll
+F:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\bin\roslyn\System.IO.FileSystem.dll
+F:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\bin\roslyn\System.IO.FileSystem.Primitives.dll
+F:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\bin\roslyn\System.Net.Http.dll
+F:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\bin\roslyn\System.Net.Sockets.dll
+F:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\bin\roslyn\System.Reflection.Metadata.dll
+F:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+F:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+F:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\bin\roslyn\System.Security.Cryptography.Encoding.dll
+F:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\bin\roslyn\System.Security.Cryptography.Primitives.dll
+F:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+F:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\bin\roslyn\System.Text.Encoding.CodePages.dll
+F:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\bin\roslyn\System.Threading.Tasks.Extensions.dll
+F:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\bin\roslyn\System.ValueTuple.dll
+F:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\bin\roslyn\System.Xml.ReaderWriter.dll
+F:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\bin\roslyn\System.Xml.XmlDocument.dll
+F:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\bin\roslyn\System.Xml.XPath.dll
+F:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\bin\roslyn\System.Xml.XPath.XDocument.dll
+F:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\bin\roslyn\vbc.exe
+F:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\bin\roslyn\vbc.exe.config
+F:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\bin\roslyn\vbc.rsp
+F:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\bin\roslyn\VBCSCompiler.exe
+F:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\bin\roslyn\VBCSCompiler.exe.config
+F:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\bin\Antlr3.Runtime.dll
+F:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\bin\EntityFramework.dll
+F:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\bin\EntityFramework.SqlServer.dll
+F:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+F:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\bin\Microsoft.Web.Infrastructure.dll
+F:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\bin\Newtonsoft.Json.dll
+F:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\bin\System.Web.Helpers.dll
+F:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\bin\System.Web.Mvc.dll
+F:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\bin\System.Web.Optimization.dll
+F:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\bin\System.Web.Razor.dll
+F:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\bin\System.Web.Webpages.Deployment.dll
+F:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\bin\System.Web.Webpages.dll
+F:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\bin\System.Web.Webpages.Razor.dll
+F:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\bin\WebGrease.dll
+F:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\bin\Antlr3.Runtime.pdb
+F:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\bin\EntityFramework.xml
+F:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\bin\EntityFramework.SqlServer.xml
+F:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\bin\Newtonsoft.Json.xml
+F:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\bin\System.Web.Optimization.xml
+F:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\bin\System.Web.Razor.xml
+F:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\bin\System.Web.Webpages.xml
+F:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\bin\System.Web.Webpages.Deployment.xml
+F:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\bin\System.Web.Webpages.Razor.xml
+F:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\bin\System.Web.Helpers.xml
+F:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\bin\System.Web.Mvc.xml
+F:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\obj\Debug\Do_An.csproj.AssemblyReference.cache
+F:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\obj\Debug\Do_An.csproj.CoreCompileInputs.cache
+F:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\obj\Debug\Do_An.csproj.CopyComplete
+F:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\obj\Debug\Do_An.dll
+F:\NAM 2\HK 1\LTW\21DTH3A_Nhom-15_VuVanHuy[2100007980]_LeNguyenHoaiAn[2100007513]\Do_An\obj\Debug\Do_An.pdb

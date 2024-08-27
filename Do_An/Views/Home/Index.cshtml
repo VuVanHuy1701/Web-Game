@@ -1,0 +1,183 @@
+﻿@{
+    ViewBag.Title = "Home";
+}
+
+<!-- new collection section start -->
+
+<div class="header_section main-layout">
+    <div class="banner_section">
+        <div class="container-fluid">
+            <section class="slide-wrapper">
+                <div class="container-fluid">
+                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#myCarousel" data-slide-to="1"></li>
+                            <li data-target="#myCarousel" data-slide-to="2"></li>
+                            <li data-target="#myCarousel" data-slide-to="3"></li>
+                        </ol>
+
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="row">
+                                    <div class="col-sm-2 padding_0">
+                                        <p class="mens_taital">Top 1</p>
+                                        <div class="page_no">0/2</div>
+                                        <p class="mens_taital_2">Hot in Month</p>
+                                    </div>
+                                    <div class="col-sm-5">
+                                        <div class="banner_taital">
+                                            <h1 class="banner_text">New Games In Month </h1>
+                                            <h1 class="mens_text"><strong>LITTLE NIGHTMARES II</strong></h1>
+                                            <p class="lorem_text">Little Nightmares II is a suspense adventure game in which you play as Mono, a young boy trapped in a world that has been distorted by an evil transmission.</p>
+                                            <button class="buy_bt">Buy Now</button>
+                                            <button class="more_bt">@Html.ActionLink("See More", "Index", "New")</button>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-5">
+                                        <div class="shoes_img"><img src="~/images/littlenightmares_1920.jpg"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-sm-2 padding_0">
+                                        <p class="mens_taital">Top 2</p>
+                                        <div class="page_no">0/2</div>
+                                        <p class="mens_taital_2">Hot in Month</p>
+                                    </div>
+                                    <div class="col-sm-5">
+                                        <div class="banner_taital">
+                                            <h1 class="banner_text">New Games In Month </h1>
+                                            <h1 class="mens_text"><strong>Resident Evil Village</strong></h1>
+                                            <p class="lorem_text">Experience survival horror like never before in the 8th major installment in the Resident Evil franchise - Resident Evil Village.</p>
+                                            <button class="buy_bt">Buy Now</button>
+                                            <button class="more_bt">@Html.ActionLink("See More", "Index", "New")</button>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-5">
+                                        <div class="shoes_img"><img src="~/images/RSE_1920.jpg"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-sm-2 padding_0">
+                                        <p class="mens_taital">Top 3</p>
+                                        <div class="page_no">0/2</div>
+                                        <p class="mens_taital_2">Hot in Month</p>
+                                    </div>
+                                    <div class="col-sm-5">
+                                        <div class="banner_taital">
+                                            <h1 class="banner_text">New Games In Month</h1>
+                                            <h1 class="mens_text"><strong>HORIZON ZERO DAWN</strong></h1>
+                                            <p class="lorem_text">Horizon Zero Dawn™ is a multi-award-winning action role-playing game – and this Complete Edition for PC includes the huge expansion The Frozen Wilds, ...</p>
+                                            <button class="buy_bt">Buy Now</button>
+                                            <button class="more_bt">@Html.ActionLink("See More", "Index", "New")</button>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-5">
+                                        <div class="shoes_img"><img src="~/images/Horizon-Zero-Dawn-wallpaper-1920.jpg"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-sm-2 padding_0">
+                                        <p class="mens_taital">
+                                            Top 4p>
+                                            <div class="page_no">0/2</div>
+                                        <p class="mens_taital_2">Hot in Month</p>
+                                    </div>
+                                    <div class="col-sm-5">
+                                        <div class="banner_taital">
+                                            <h1 class="banner_text">New Games In Month </h1>
+                                            <h1 class="mens_text"><strong>THE WITCHER 3: WILD HUNT</strong></h1>
+                                            <p class="lorem_text">The Witcher 3: Wild Hunt - Game of the Year Edition · Best game I ever played in 36 years! I have more than 1200 hours in the PS4 version and I just had to buy ...</p>
+                                            <button class="buy_bt">Buy Now</button>
+                                            <button class="more_bt">@Html.ActionLink("See More", "Index", "New")</button>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-5">
+                                        <div class="shoes_img"><img src="~/images/The_Witcher_3_Wild_Hunt-A_perfeicao_dos_RPGs.jpg"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>
+<div class="layout_padding collection_section">
+    <div class="container">
+        <h1 class="new_text"><strong>New  Collection</strong></h1>
+        <p class="consectetur_text">consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+        <div class="collection_section_2">
+            <div class="row">
+                <div class="col-md-6">
+                    <button class="new_bt">New</button>
+                    <div class="about-img">
+                        <div class="shoes-img"><img src="~/images/horizonzerodawn.jpg"></div>
+                        <p class="sport_text"><strong>HORIZON ZERO DAWN</strong></p>
+                        <div class="dolar_text">$9.99</div>
+                        <div class="star_icon">
+                            <ul>
+                                <li><a href="#"><img src=""></a></li>
+                                <li><a href="#"><img src=""></a></li>
+                                <li><a href="#"><img src=""></a></li>
+                                <li><a href="#"><img src=""></a></li>
+                                <li><a href="#"><img src=""></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <button class="seemore_bt">See More</button>
+                </div>
+                <div class="col-md-6">
+                    <div class="about-img2">
+                        <div class="shoes-img2"><img src="~/images/witcher3.jpg"></div>
+                        <p class="sport_text"><strong>Resident Evil Village</strong></p>
+                        <div class="dolar_text">$19.99 </div>
+                        <div class="star_icon">
+                            <ul>
+                                <li><a href="#"><img src=""></a></li>
+                                <li><a href="#"><img src=""></a></li>
+                                <li><a href="#"><img src=""></a></li>
+                                <li><a href="#"><img src=""></a></li>
+                                <li><a href="#"><img src=""></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="collection_section">
+    <div class="container">
+        <h1 class="new_text"><strong>Buy the Most</strong></h1>
+        <p class="consectetur_text">consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+    </div>
+</div>
+<div class="collectipn_section_3 layuot_padding">
+    <div class="container">
+        <div class="racing_shoes">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="shoes-img3"><img src="~/images/game2.jpg"></div>
+                </div>
+                <div class="col-md-4">
+                    <div class="sale_text"><strong>Sale<br><span>In</span> <br>This Month</strong></div>
+                    <div class="sale_text"><strong>$<span>10</span></strong></div>
+                    <button class="seemore add">@Html.ActionLink("See More", "Index", "New")</button>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- new collection section end -->

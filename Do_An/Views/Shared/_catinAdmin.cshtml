@@ -1,0 +1,26 @@
+﻿@using Do_An.Models
+@{
+    DoAn_WebEntities dBEntities = new DoAn_WebEntities();
+    List<Category> list = dBEntities.Categories.ToList();
+}
+
+<div>
+    <table id="example1" class="table table-bordered table-hover">
+        <thead>
+            <tr>
+                <th> Cate Name</th>
+                <th> Cate Code</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in list)
+            {
+                <tr>
+                    <td>@item.TenHangMuc </td>
+                    <td>@item.MaCategory</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

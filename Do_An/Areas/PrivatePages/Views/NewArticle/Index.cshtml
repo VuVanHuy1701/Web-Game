@@ -1,0 +1,127 @@
+﻿@model Do_An.Models.NewsPost
+
+@using Do_An.Models
+
+@{
+    ViewBag.Title = "NewsPost";
+    List<NewsPost> list = ViewData["News"] as List<NewsPost>;
+}
+@{
+    <style>
+        form {
+            display: inline;
+        }
+    </style>
+}
+<section class="content">
+    <div class="container-fluid">
+        <div class="row">
+            <!--Left colum-->
+            <div class="col-md-10">
+                <!--general-->
+                <div class="card card-secondary">
+                    <div class="card-header">
+                        <h1 class="card-title" style="font-size:30px; margin-left: 550px; ">
+                            Post List
+                        </h1>
+                        <div class="card-tools">
+
+                        </div>
+                    </div>
+                    <!--card header-->
+                    <div class="card-body">
+                        <div class="col-sm-12">
+                            <table id="example1" class="table table-bordered table-hover">
+                                <thead>
+                                    <tr>
+                                        <th> Post ID</th>
+                                        <th> Post Name</th>
+                                        <th> Post Name Full</th>
+                                        <th> Picture </th>
+                                        <th> Describe </th>
+                                        <th> Update Day </th>
+                                        <th> Command group</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (NewsPost item in list)
+                                    {
+                                        <tr>
+                                            <td>@item.PostID</td>
+                                            <td>@item.PostName</td>
+                                            <td>@item.PostNameFull </td>
+                                            <td><img src="~/images/@item.PostImg" class="img-responsive" alt="Image" style="width:400px; height:200px;" /></td>
+                                            <td>@item.PostDesc</td>
+                                            <td>@string.Format("{0: dd/ MM/ yyyy}", @item.dayUpdated)</td>
+                                            <td>
+                                                @using (Html.BeginForm("DeletePost", "NewArticle", FormMethod.Post))
+                                                {
+                                                    <input type="hidden" name="postId" value="@item.PostID" />
+                                                    <button class="btn btn-danger">Delete</button>
+                                                }
+                                                @using (Html.BeginForm("UpdatePost", "NewArticle", FormMethod.Post))
+                                                {
+                                                    <input type="hidden" name="maPost" value="@item.PostID" />
+                                                    <button class="btn btn-primary">Editing</button>
+                                                }
+                                            </td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--End Left colum-->
+            <!--Right colum-->
+            <div class=" col-md-2">
+                <!--general-->
+                @using (@Html.BeginForm("Index", "NewArticle", FormMethod.Post))
+                {
+                    <div class="card card-success">
+                        <div class="card-header">
+                            <h3 class="card-title" style="font-size:25px; margin-left:45px;">Product Information</h3>
+                            <div class="card-tools">
+
+
+                            </div>
+                        </div>
+                        <!--/card header-->
+                        <div class="card-body">
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Add Tittle</label>
+                                @Html.TextBoxFor(m => m.PostName, new { @class = "form-control", @placeholder = "Tittle... max: 50" })
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Add Tittle</label>
+                                @Html.TextBoxFor(m => m.PostNameFull, new { @class = "form-control", @placeholder = "Tittle Full..." })
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Add Post Image</label>
+                                @Html.TextBoxFor(m => m.PostImg, new { @class = "form-control", @placeholder = "Poster..." })
+                            </div>
+                            <div class="form-group">
+                                <label style="padding-top:18px;">Update Day </label>
+                                @Html.TextBoxFor(m => m.dayUpdated, new { @class = "form-control", @placeholder = "Update Day..." })
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Describe</label>
+                                @Html.TextAreaFor(m => m.PostDesc, new { @class = "form-control", @placeholder = "Write . . ." })
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-success">Save</button>
+                            </div>
+                        </div>
+                    </div>
+                    @Html.HiddenFor(x => x.PostID)
+                }
+                <!--/card-->
+
+            </div>
+
+            <!--End Right colum-->
+
+        </div>
+    </div>
+</section>

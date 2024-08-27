@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="591de2d7f5a7464cb278c90ee89b242c" Name="Diagram1" ZoomLevel="108">
+        <EntityTypeShape EntityType="DoAn_WebModel.Admin" Width="1.5" PointX="2.125" PointY="2.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="DoAn_WebModel.Category" Width="1.5" PointX="2.125" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DoAn_WebModel.ChiTietDatHang" Width="1.5" PointX="7.75" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DoAn_WebModel.DonDatHang" Width="1.5" PointX="7.75" PointY="2.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DoAn_WebModel.Game" Width="1.5" PointX="5" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DoAn_WebModel.KhachHang" Width="1.5" PointX="7.75" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DoAn_WebModel.StudioGame" Width="1.5" PointX="5" PointY="4.25" IsExpanded="true" />
+        <AssociationConnector Association="DoAn_WebModel.Fk_Category" ManuallyRouted="false" />
+        <AssociationConnector Association="DoAn_WebModel.Fk_DonHang" ManuallyRouted="false" />
+        <AssociationConnector Association="DoAn_WebModel.Fk_Game" ManuallyRouted="false" />
+        <AssociationConnector Association="DoAn_WebModel.Fk_KhachHang" ManuallyRouted="false" />
+        <AssociationConnector Association="DoAn_WebModel.Fk_StudioGame" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="DoAn_WebModel.Game_Category" Width="1.5" PointX="2.125" PointY="4.75" />
+        <EntityTypeShape EntityType="DoAn_WebModel.Gametop" Width="1.5" PointX="2.125" PointY="7" IsExpanded="true" />
+        <EntityTypeShape EntityType="DoAn_WebModel.NewsPost" Width="1.5" PointX="5" PointY="6.5" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

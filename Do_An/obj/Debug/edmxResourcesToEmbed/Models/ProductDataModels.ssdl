@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DoAn_WebModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Admin">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserAdmin" Type="varchar" MaxLength="30" />
+    <Property Name="PassAdmin" Type="varchar" MaxLength="30" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Category">
+    <Key>
+      <PropertyRef Name="MaCategory" />
+    </Key>
+    <Property Name="MaCategory" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TenHangMuc" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="ghichu" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="ChiTietDatHang">
+    <Key>
+      <PropertyRef Name="SoDH" />
+      <PropertyRef Name="MaGame" />
+    </Key>
+    <Property Name="SoDH" Type="int" Nullable="false" />
+    <Property Name="MaGame" Type="int" Nullable="false" />
+    <Property Name="DonGia" Type="decimal" Precision="18" Scale="0" />
+  </EntityType>
+  <EntityType Name="DonDatHang">
+    <Key>
+      <PropertyRef Name="SoDH" />
+    </Key>
+    <Property Name="SoDH" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="MaKH" Type="int" />
+  </EntityType>
+  <EntityType Name="Game">
+    <Key>
+      <PropertyRef Name="MaGame" />
+    </Key>
+    <Property Name="MaGame" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TenGame" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="AnhBia" Type="varchar" MaxLength="100" />
+    <Property Name="GiaBan" Type="decimal" Precision="18" Scale="0" />
+    <Property Name="MoTa" Type="nvarchar(max)" />
+    <Property Name="NgayCapNhat" Type="date" />
+    <Property Name="SoLuongTon" Type="int" />
+    <Property Name="MaCate" Type="int" />
+    <Property Name="MaStu" Type="int" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'DoAn_Web.dbo.Gametop' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="Gametop">
+    <Key>
+      <PropertyRef Name="ten" />
+    </Key>
+    <Property Name="ten" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="anh" Type="varchar" MaxLength="100" />
+    <Property Name="mieuta" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="KhachHang">
+    <Key>
+      <PropertyRef Name="MaKH" />
+    </Key>
+    <Property Name="MaKH" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="HoTen" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="TaiKhoan" Type="varchar" MaxLength="50" />
+    <Property Name="Email" Type="varchar" MaxLength="100" />
+    <Property Name="DiachiKH" Type="nvarchar" MaxLength="200" />
+    <Property Name="NgaySinh" Type="datetime" />
+  </EntityType>
+  <EntityType Name="NewsPost">
+    <Key>
+      <PropertyRef Name="PostID" />
+    </Key>
+    <Property Name="PostID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PostName" Type="nvarchar" MaxLength="50" />
+    <Property Name="PostImg" Type="nvarchar" MaxLength="50" />
+    <Property Name="PostDesc" Type="nvarchar(max)" />
+    <Property Name="dayUpdated" Type="date" />
+    <Property Name="PostNameFull" Type="nvarchar" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="StudioGame">
+    <Key>
+      <PropertyRef Name="MaStudio" />
+    </Key>
+    <Property Name="MaStudio" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TenStudio" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="DiaChi" Type="nvarchar" MaxLength="200" />
+    <Property Name="Email" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'DoAn_Web.dbo.Game_Category' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="Game_Category">
+    <Key>
+      <PropertyRef Name="MaGame" />
+      <PropertyRef Name="TenGame" />
+      <PropertyRef Name="TenHangMuc" />
+    </Key>
+    <Property Name="MaGame" Type="int" Nullable="false" />
+    <Property Name="TenGame" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="AnhBia" Type="varchar" MaxLength="100" />
+    <Property Name="GiaBan" Type="decimal" Precision="18" Scale="0" />
+    <Property Name="TenHangMuc" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <Association Name="Fk_Category">
+    <End Role="Category" Type="Self.Category" Multiplicity="0..1" />
+    <End Role="Game" Type="Self.Game" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Category">
+        <PropertyRef Name="MaCategory" />
+      </Principal>
+      <Dependent Role="Game">
+        <PropertyRef Name="MaCate" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Fk_DonHang">
+    <End Role="DonDatHang" Type="Self.DonDatHang" Multiplicity="1" />
+    <End Role="ChiTietDatHang" Type="Self.ChiTietDatHang" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DonDatHang">
+        <PropertyRef Name="SoDH" />
+      </Principal>
+      <Dependent Role="ChiTietDatHang">
+        <PropertyRef Name="SoDH" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Fk_Game">
+    <End Role="Game" Type="Self.Game" Multiplicity="1" />
+    <End Role="ChiTietDatHang" Type="Self.ChiTietDatHang" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Game">
+        <PropertyRef Name="MaGame" />
+      </Principal>
+      <Dependent Role="ChiTietDatHang">
+        <PropertyRef Name="MaGame" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Fk_KhachHang">
+    <End Role="KhachHang" Type="Self.KhachHang" Multiplicity="0..1" />
+    <End Role="DonDatHang" Type="Self.DonDatHang" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="KhachHang">
+        <PropertyRef Name="MaKH" />
+      </Principal>
+      <Dependent Role="DonDatHang">
+        <PropertyRef Name="MaKH" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Fk_StudioGame">
+    <End Role="StudioGame" Type="Self.StudioGame" Multiplicity="0..1" />
+    <End Role="Game" Type="Self.Game" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="StudioGame">
+        <PropertyRef Name="MaStudio" />
+      </Principal>
+      <Dependent Role="Game">
+        <PropertyRef Name="MaStu" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="DoAn_WebModelStoreContainer">
+    <EntitySet Name="Admin" EntityType="Self.Admin" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Category" EntityType="Self.Category" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ChiTietDatHang" EntityType="Self.ChiTietDatHang" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DonDatHang" EntityType="Self.DonDatHang" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Game" EntityType="Self.Game" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="KhachHang" EntityType="Self.KhachHang" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="NewsPost" EntityType="Self.NewsPost" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="StudioGame" EntityType="Self.StudioGame" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Gametop" EntityType="Self.Gametop" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [Gametop].[ten] AS [ten], 
+    [Gametop].[anh] AS [anh], 
+    [Gametop].[mieuta] AS [mieuta]
+    FROM [dbo].[Gametop] AS [Gametop]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Game_Category" EntityType="Self.Game_Category" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [Game_Category].[MaGame] AS [MaGame], 
+    [Game_Category].[TenGame] AS [TenGame], 
+    [Game_Category].[AnhBia] AS [AnhBia], 
+    [Game_Category].[GiaBan] AS [GiaBan], 
+    [Game_Category].[TenHangMuc] AS [TenHangMuc]
+    FROM [dbo].[Game_Category] AS [Game_Category]</DefiningQuery>
+    </EntitySet>
+    <AssociationSet Name="Fk_Category" Association="Self.Fk_Category">
+      <End Role="Category" EntitySet="Category" />
+      <End Role="Game" EntitySet="Game" />
+    </AssociationSet>
+    <AssociationSet Name="Fk_DonHang" Association="Self.Fk_DonHang">
+      <End Role="DonDatHang" EntitySet="DonDatHang" />
+      <End Role="ChiTietDatHang" EntitySet="ChiTietDatHang" />
+    </AssociationSet>
+    <AssociationSet Name="Fk_Game" Association="Self.Fk_Game">
+      <End Role="Game" EntitySet="Game" />
+      <End Role="ChiTietDatHang" EntitySet="ChiTietDatHang" />
+    </AssociationSet>
+    <AssociationSet Name="Fk_KhachHang" Association="Self.Fk_KhachHang">
+      <End Role="KhachHang" EntitySet="KhachHang" />
+      <End Role="DonDatHang" EntitySet="DonDatHang" />
+    </AssociationSet>
+    <AssociationSet Name="Fk_StudioGame" Association="Self.Fk_StudioGame">
+      <End Role="StudioGame" EntitySet="StudioGame" />
+      <End Role="Game" EntitySet="Game" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

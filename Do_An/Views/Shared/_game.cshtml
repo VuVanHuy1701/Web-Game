@@ -1,0 +1,34 @@
+﻿
+@model IEnumerable<Do_An.Models.Game>
+
+
+<div class="layout_padding gallery_section">
+    <div class="container">
+        <div class="row">
+            
+            @foreach (var item in Model)
+             {
+                <div class="col-sm-4">
+                    <div class="best_shoes">
+                        <p class="best_text">
+                            @Html.ActionLink(@item.TenGame, "Details", new { id = item.MaGame })
+                        </p>
+                        @*<p>@Html.ActionLink(@item.Category.TenHangMuc, "Top", new { Id = item.MaCate }, null)</p>*@
+                    </div>
+                    
+                    <div class="shoes_icon">
+                        <a href="@Url.Action("Details", new { id = @item.MaGame })">
+                            <img src="~/images/@item.AnhBia" class="img-responsive" alt="Image" />
+                        </a>
+                    </div>
+                    <div class="add_buy">
+
+                        <button class="buy_bt add">$@item.GiaBan @Html.ActionLink("Buy Now", "Index", "CheckOut")</button>
+                   
+                        <button class="buy_bt add">@Html.ActionLink("Add to Wishlist", "OrderNow", "ShopCart", new { Id = item.MaGame }, null)</button>
+                    </div>
+                </div>
+             }
+        </div>
+    </div>
+</div>

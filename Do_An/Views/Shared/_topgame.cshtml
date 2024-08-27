@@ -1,0 +1,19 @@
+﻿
+@using Do_An.Models
+@{
+    DoAn_WebEntities dBEntities = new DoAn_WebEntities();
+    List<Gametop> list = dBEntities.Gametops.ToList();
+}
+
+@foreach (var item in list)
+{
+    
+        @item.ten
+           
+        @*<p>@Html.ActionLink(@item.Category.TenHangMuc, "Top", new { Id = item.MaCate }, null)</p>*@
+      
+        @item.mieuta
+        
+        <img src="~/images/@item.anh" class="img-responsive" alt="Image" />
+       
+}

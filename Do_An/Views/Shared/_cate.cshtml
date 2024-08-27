@@ -1,0 +1,20 @@
+﻿
+@using Do_An.Models
+@{
+    DoAn_WebEntities dBEntities = new DoAn_WebEntities();
+    List<Category> list = dBEntities.Categories.ToList();
+}
+<div class="collection_text">Games</div>
+<div class="collection_section layout_padding">
+    <h1 class="new_text game"><strong>Games In This Month</strong></h1>
+    <p class="consectetur_text game game-f">Games in the most purchases and ratings this month</p>
+</div>
+<div class="left-cate">
+    <h2 class="this-cate">Categories</h2>
+    <ul>
+        @foreach (var item in list)
+        {
+            <li>@Html.ActionLink(item.TenHangMuc, "Index", "Top", new { cateId = item.MaCategory }, null)</li>
+        }
+    </ul>
+</div>

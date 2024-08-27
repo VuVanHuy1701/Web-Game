@@ -1,0 +1,160 @@
+﻿@using Do_An.Models
+
+@model Do_An.Models.Game
+
+@{
+    ViewBag.Title = "Games";
+    List<Game> list = ViewData["game"] as List<Game>;
+}
+@{
+    <style>
+        form {
+            display: inline;
+        }
+    </style>
+}
+<!-- Content Header (Page header) -->
+<!--<section class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-6">
+                <h1>Danh Sách Games</h1>
+            </div>
+            <div class="col-sm-6">
+                <ol class="breadcrumb float-sm-right">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item active">DataTables</li>
+                </ol>
+            </div>
+        </div>
+    </div>-->
+<!-- /.container-fluid -->
+<!--</section>-->
+<!--Maicontent-->
+
+<section class="content">
+    <div class="container-fluid">
+        <div class="row">
+            <!--Left colum-->
+            <div class="col-md-10">
+                <!--general-->
+                <div class="card card-secondary">
+                    <div class="card-header">
+                        <h1 class="card-title" style="font-size:30px; margin-left: 550px; ">
+                            Games List
+                        </h1>
+                        <div class="card-tools">
+
+                        </div>
+                    </div>
+                    <!--card header-->
+                    <div class="card-body">
+                        <div class="col-sm-12">
+                            <table id="example1" class="table table-bordered table-hover">
+                                <thead> 
+                                    <tr>
+                                        <th> Games Code</th>
+                                        <th> Games Name</th>
+                                        <th> Code Cate</th>
+                                        <th> Picture </th>
+                                        <th> Price </th>
+                                        <th> Describe </th>
+                                        <th> Update Day </th>
+                                        <th> Quantity In Stock</th>
+                                        <th> Command Group</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (Game item in list)
+                                    {
+                                        <tr>
+                                            <td>@item.MaGame</td>
+                                            <td>@item.TenGame</td>
+                                            <td>@item.MaCate</td>
+                                            <td><img src="~/images/@item.AnhBia" class="img-responsive" alt="Image" style="width:110px; height:160px;" /></td>
+                                            <td>@item.GiaBan$</td>
+                                            <td>@item.MoTa</td>
+                                            <td>@string.Format("{0: dd/ MM/ yyyy}", @item.NgayCapNhat)</td>
+                                            <td>@item.SoLuongTon</td>
+                                            <td>
+                                                @using (Html.BeginForm("Deletegame", "SanPhamMoi", FormMethod.Post))
+                                                 {
+                                                    <input type="hidden" name="magame" value="@item.MaGame" />
+                                                    <button class="btn btn-danger">Delete</button>
+                                                 }
+                                                @using (Html.BeginForm("Updategame", "SanPhamMoi", FormMethod.Post))
+                                                 {
+                                                    <input type="hidden" name="magamesua" value="@item.MaGame" />
+                                                    <button class="btn btn-primary">Editing</button>
+                                                 }
+                                            </td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--End Left colum-->
+            <!--Right colum-->
+            <div class=" col-md-2">
+                <!--general-->
+                @using (@Html.BeginForm("Index", "SanPhamMoi", FormMethod.Post))
+                {
+                    <div class="card card-success">
+                        <div class="card-header">
+                            <h3 class="card-title" style="font-size:25px; margin-left:45px;">Product Information</h3>
+                            <div class="card-tools">
+
+
+                            </div>
+                        </div>
+                        <!--/card header-->
+                        <div class="card-body">
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Add Name Games</label>
+                                @Html.TextBoxFor(m => m.TenGame, new { @class = "form-control", @placeholder = "Name Game..." })
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Add Cate Code</label>
+                                @Html.TextBoxFor(m => m.MaCate, new { @class = "form-control", @placeholder = "Catalog code...1 - 2 - 3..." })
+                                @Html.Partial("_catinAdmin")
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Add Picture Games</label>
+                                @Html.TextBoxFor(m => m.AnhBia, new { @class = "form-control", @placeholder = "Pic In Game..." })
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Price</label>
+                                @Html.TextBoxFor(m => m.GiaBan, new { @class = "form-control", @placeholder = "Price..." })
+                            </div>
+
+                            <div class="form-group">
+                                <label style="padding-top:18px;">Update Day </label>
+                                @Html.TextBoxFor(m => m.NgayCapNhat, new { @class = "form-control", @placeholder = "Update Day..." })
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Quantity In Stock</label>
+                                @Html.TextBoxFor(m => m.SoLuongTon, new { @class = "form-control", @placeholder = "Quantity In Stock..." })
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Describe</label>
+                                @Html.TextAreaFor(m => m.MoTa, new { @class = "form-control", @placeholder = "Describe..." })
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-success">Save</button>
+                            </div>
+                        </div>
+                    </div>
+                    @Html.HiddenFor(x => x.MaGame)
+                }
+                <!--/card-->
+               
+            </div>
+            
+            <!--End Right colum-->
+
+        </div>
+    </div>
+</section>

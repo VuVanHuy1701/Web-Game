@@ -1,0 +1,28 @@
+﻿@model Do_An.Models.NewsPost
+@{
+    ViewBag.Title = "Details Post ";
+}
+
+<div class="container" style="width:75%">
+    <div class="row">
+        <div class="col-sm-4">
+            <br />
+            <p class="best_text">
+                <h4 class="text-uppercase textdetails">@Model.PostNameFull</h4>
+            </p>
+            <img src="~/images/@Model.PostImg" class="img-thumbnail" style="width:400px; height:250px;" alt="Image" />
+        </div>
+        <div class="col-sm-8">
+          
+            <div class="bd">
+                <p class="description desc ">@Model.PostDesc</p>
+            </div>
+            <div class="bd">
+                <p>Publication Date: @string.Format("{0: dd MMM yyyy}", @Model.dayUpdated)</p>
+            </div>
+            <p class="back">@Html.ActionLink("Back to New List", "Index", "New")</p>
+        </div>
+    </div>
+</div>
+<br />
+

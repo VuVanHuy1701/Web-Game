@@ -1,0 +1,126 @@
+﻿@using Do_An.Models
+
+@model Do_An.Models.Category
+
+@{
+    ViewBag.Title = "Thể Loại";
+    List<Category> list = ViewData["theloai"] as List<Category>;
+}
+@{ 
+   <style>
+       form{
+           display:inline;
+       }
+   </style>
+}
+<!-- Content Header (Page header) -->
+<!--<section class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-6">
+                <h1 style="font-size:30px; margin-left: 550px; ">
+                    Category
+                </h1>
+            </div>
+            <div class="col-sm-6">
+                <ol class="breadcrumb float-sm-right">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item active">DataTables</li>
+                </ol>
+            </div>
+        </div>
+    </div>--><!-- /.container-fluid -->
+<!--</section>-->
+
+<!--Maicontent-->
+
+<section class="content">
+    <div class="container-fluid">
+        <div class="row">
+            <!--Left colum-->
+            <div class="col-md-8">
+                <!--general-->
+                <div class="card card-secondary">
+                    <div class="card-header">
+                        <h3 class="card-title"  style="font-size:30px; margin-left: 450px; ">
+                            Category
+                        </h3>
+                        <div class="card-tools">
+                           
+                        </div>
+                    </div>
+                    <!--card header-->
+                    <div class="card-body">
+                        <div class="col-sm-12">
+                            <table id="example2" class="table table-bordered table-hover">
+                                <thead>
+                                    <tr>
+                                        <th> Code </th>
+                                        <th> Type Name </th>
+                                        <th> Note </th>
+                                        <th> Command group</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach ( Category item in list) 
+                                     { 
+                                        <tr>
+                                            <td>@item.MaCategory</td>
+                                            <td>@item.TenHangMuc</td>
+                                            <td>@item.ghichu</td>
+                                            <td>
+                                                @using (Html.BeginForm("Delete","ChungLoai_NganhHang", FormMethod.Post)) 
+                                                 { 
+                                                    <input type="hidden" name="macate" value="@item.MaCategory" />
+                                                    <button class="btn btn-danger">Delete</button>
+                                                 }
+                                                @using (Html.BeginForm("Update","ChungLoai_NganhHang", FormMethod.Post)) 
+                                                 { 
+                                                    <input type="hidden" name="masua" value="@item.MaCategory" />
+                                                    <button class="btn btn-primary">Editing</button>
+                                                 }
+                                            </td>
+                                        </tr>
+                                     }
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--End Left colum-->
+            <!--Right colum-->
+            <div class=" col-md-4">
+                <!--general-->
+                @using (@Html.BeginForm("Index", "ChungLoai_NganhHang", FormMethod.Post))
+                 {
+                    <div class="card card-success">
+                        <div class="card-header">
+                            <h3 class="card-title" style="font-size:27px; margin-left:120px;">Category Information</h3>
+                            <div class="card-tools">
+                            </div>
+                        </div>
+                        <!--/card header-->
+                        <div    class="card-body">
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Thêm Thể Loại Games</label>
+                                @Html.TextBoxFor(m => m.TenHangMuc, new { @class = "form-control", @placeholder = "Name Of Category..." })
+                            </div>
+                            <!--text area-->
+                            <div class="form-group">
+                                <label style="padding-top:18px;">Diễn Giải </label>
+                                @Html.TextAreaFor(m => m.ghichu, new { @class = "form-control", @placeholder = "Enter dis of category..." })
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-success">Lưu thông tin</button>
+                            </div>
+                        </div>
+                    </div>
+                    @Html.HiddenFor(x => x.MaCategory)
+                 }
+                <!--/card-->
+            </div>
+        </div>
+    </div>
+</section>
+

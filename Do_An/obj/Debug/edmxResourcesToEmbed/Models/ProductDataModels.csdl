@@ -1,0 +1,202 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DoAn_WebModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Admin">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserAdmin" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="PassAdmin" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Category">
+    <Key>
+      <PropertyRef Name="MaCategory" />
+    </Key>
+    <Property Name="MaCategory" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TenHangMuc" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Games" Relationship="Self.Fk_Category" FromRole="Category" ToRole="Game" />
+    <Property Name="ghichu" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="ChiTietDatHang">
+    <Key>
+      <PropertyRef Name="SoDH" />
+      <PropertyRef Name="MaGame" />
+    </Key>
+    <Property Name="SoDH" Type="Int32" Nullable="false" />
+    <Property Name="MaGame" Type="Int32" Nullable="false" />
+    <Property Name="DonGia" Type="Decimal" Precision="18" Scale="0" />
+    <NavigationProperty Name="DonDatHang" Relationship="Self.Fk_DonHang" FromRole="ChiTietDatHang" ToRole="DonDatHang" />
+    <NavigationProperty Name="Game" Relationship="Self.Fk_Game" FromRole="ChiTietDatHang" ToRole="Game" />
+  </EntityType>
+  <EntityType Name="DonDatHang">
+    <Key>
+      <PropertyRef Name="SoDH" />
+    </Key>
+    <Property Name="SoDH" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MaKH" Type="Int32" />
+    <NavigationProperty Name="ChiTietDatHangs" Relationship="Self.Fk_DonHang" FromRole="DonDatHang" ToRole="ChiTietDatHang" />
+    <NavigationProperty Name="KhachHang" Relationship="Self.Fk_KhachHang" FromRole="DonDatHang" ToRole="KhachHang" />
+  </EntityType>
+  <EntityType Name="Game">
+    <Key>
+      <PropertyRef Name="MaGame" />
+    </Key>
+    <Property Name="MaGame" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TenGame" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="AnhBia" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="GiaBan" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="MoTa" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="NgayCapNhat" Type="DateTime" Precision="0" />
+    <Property Name="SoLuongTon" Type="Int32" />
+    <Property Name="MaCate" Type="Int32" />
+    <Property Name="MaStu" Type="Int32" />
+    <NavigationProperty Name="Category" Relationship="Self.Fk_Category" FromRole="Game" ToRole="Category" />
+    <NavigationProperty Name="ChiTietDatHangs" Relationship="Self.Fk_Game" FromRole="Game" ToRole="ChiTietDatHang" />
+    <NavigationProperty Name="StudioGame" Relationship="Self.Fk_StudioGame" FromRole="Game" ToRole="StudioGame" />
+  </EntityType>
+  <EntityType Name="KhachHang">
+    <Key>
+      <PropertyRef Name="MaKH" />
+    </Key>
+    <Property Name="MaKH" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="HoTen" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="TaiKhoan" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Email" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="DiachiKH" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="NgaySinh" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="DonDatHangs" Relationship="Self.Fk_KhachHang" FromRole="KhachHang" ToRole="DonDatHang" />
+  </EntityType>
+  <EntityType Name="StudioGame">
+    <Key>
+      <PropertyRef Name="MaStudio" />
+    </Key>
+    <Property Name="MaStudio" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TenStudio" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="DiaChi" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="Email" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Games" Relationship="Self.Fk_StudioGame" FromRole="StudioGame" ToRole="Game" />
+  </EntityType>
+  <Association Name="Fk_Category">
+    <End Role="Category" Type="Self.Category" Multiplicity="0..1" />
+    <End Role="Game" Type="Self.Game" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Category">
+        <PropertyRef Name="MaCategory" />
+      </Principal>
+      <Dependent Role="Game">
+        <PropertyRef Name="MaCate" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Fk_DonHang">
+    <End Role="DonDatHang" Type="Self.DonDatHang" Multiplicity="1" />
+    <End Role="ChiTietDatHang" Type="Self.ChiTietDatHang" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DonDatHang">
+        <PropertyRef Name="SoDH" />
+      </Principal>
+      <Dependent Role="ChiTietDatHang">
+        <PropertyRef Name="SoDH" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Fk_Game">
+    <End Role="Game" Type="Self.Game" Multiplicity="1" />
+    <End Role="ChiTietDatHang" Type="Self.ChiTietDatHang" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Game">
+        <PropertyRef Name="MaGame" />
+      </Principal>
+      <Dependent Role="ChiTietDatHang">
+        <PropertyRef Name="MaGame" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Fk_KhachHang">
+    <End Role="KhachHang" Type="Self.KhachHang" Multiplicity="0..1" />
+    <End Role="DonDatHang" Type="Self.DonDatHang" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="KhachHang">
+        <PropertyRef Name="MaKH" />
+      </Principal>
+      <Dependent Role="DonDatHang">
+        <PropertyRef Name="MaKH" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Fk_StudioGame">
+    <End Role="StudioGame" Type="Self.StudioGame" Multiplicity="0..1" />
+    <End Role="Game" Type="Self.Game" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="StudioGame">
+        <PropertyRef Name="MaStudio" />
+      </Principal>
+      <Dependent Role="Game">
+        <PropertyRef Name="MaStu" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="DoAn_WebEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Admins" EntityType="Self.Admin" />
+    <EntitySet Name="Categories" EntityType="Self.Category" />
+    <EntitySet Name="ChiTietDatHangs" EntityType="Self.ChiTietDatHang" />
+    <EntitySet Name="DonDatHangs" EntityType="Self.DonDatHang" />
+    <EntitySet Name="Games" EntityType="Self.Game" />
+    <EntitySet Name="KhachHangs" EntityType="Self.KhachHang" />
+    <EntitySet Name="StudioGames" EntityType="Self.StudioGame" />
+    <AssociationSet Name="Fk_Category" Association="Self.Fk_Category">
+      <End Role="Category" EntitySet="Categories" />
+      <End Role="Game" EntitySet="Games" />
+    </AssociationSet>
+    <AssociationSet Name="Fk_DonHang" Association="Self.Fk_DonHang">
+      <End Role="DonDatHang" EntitySet="DonDatHangs" />
+      <End Role="ChiTietDatHang" EntitySet="ChiTietDatHangs" />
+    </AssociationSet>
+    <AssociationSet Name="Fk_Game" Association="Self.Fk_Game">
+      <End Role="Game" EntitySet="Games" />
+      <End Role="ChiTietDatHang" EntitySet="ChiTietDatHangs" />
+    </AssociationSet>
+    <AssociationSet Name="Fk_KhachHang" Association="Self.Fk_KhachHang">
+      <End Role="KhachHang" EntitySet="KhachHangs" />
+      <End Role="DonDatHang" EntitySet="DonDatHangs" />
+    </AssociationSet>
+    <AssociationSet Name="Fk_StudioGame" Association="Self.Fk_StudioGame">
+      <End Role="StudioGame" EntitySet="StudioGames" />
+      <End Role="Game" EntitySet="Games" />
+    </AssociationSet>
+    <EntitySet Name="Game_Category" EntityType="DoAn_WebModel.Game_Category" />
+    <EntitySet Name="Gametops" EntityType="DoAn_WebModel.Gametop" />
+    <EntitySet Name="NewsPosts" EntityType="DoAn_WebModel.NewsPost" />
+  </EntityContainer>
+  <EntityType Name="Game_Category">
+    <Key>
+      <PropertyRef Name="MaGame" />
+      <PropertyRef Name="TenGame" />
+      <PropertyRef Name="TenHangMuc" />
+    </Key>
+    <Property Name="MaGame" Type="Int32" Nullable="false" />
+    <Property Name="TenGame" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="AnhBia" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="GiaBan" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="TenHangMuc" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Gametop">
+    <Key>
+      <PropertyRef Name="ten" />
+    </Key>
+    <Property Name="ten" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="anh" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="mieuta" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="NewsPost">
+    <Key>
+      <PropertyRef Name="PostID" />
+    </Key>
+    <Property Name="PostID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PostName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="PostImg" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="PostDesc" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="dayUpdated" Type="DateTime" Precision="0" />
+    <Property Name="PostNameFull" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+  </EntityType>
+</Schema>

@@ -1,0 +1,71 @@
+﻿@using Do_An.Models
+@{
+    ViewBag.Title = "Khách hàng mới";
+}
+@{
+    ViewBag.Title = "Custommer";
+    List<KhachHang> list = ViewData["KH"] as List<KhachHang>;
+}
+@{
+    <style>
+        form {
+            display: inline;
+        }
+    </style>
+}
+<section class="content">
+    <div class="container-fluid">
+        <div class="row">
+            <!--Left colum-->
+            <div class="col-md-12">
+                <!--general-->
+                <div class="card card-secondary">
+                    <div class="card-header">
+                        <h1 class="card-title" style="font-size:30px; margin-left: 550px; ">
+                            Customer List
+                        </h1>
+                        <div class="card-tools">
+
+                        </div>
+                    </div>
+                    <!--card header-->
+                    <div class="card-body">
+                        <div class="col-sm-12">
+                            <table id="example1" class="table table-bordered table-hover">
+                                <thead>
+                                    <tr>
+                                        <th> Name</th>
+                                        <th> Account</th>
+                                        <th> Email</th>
+                                        <th> Address </th>
+                                        <th> Date </th>
+
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (KhachHang item in list)
+                                    {
+                                        <tr>
+                                            <td>@item.HoTen</td>
+                                            <td>@item.TaiKhoan</td>
+                                            <td>@item.Email</td>
+                                            <td>@item.DiachiKH</td>
+                                            <td>@string.Format("{0: dd/ MM/ yyyy}", @item.NgaySinh)</td>
+                                            <td>
+                                                @using (Html.BeginForm("DeleteKH", "KHMOI", FormMethod.Post))
+                                                {
+                                                    <input type="hidden" name="maKH" value="@item.MaKH" />
+                                                    <button class="btn btn-danger">Delete</button>
+                                                }
+                                            </td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
